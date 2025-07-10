@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "trip_id": { "type": "string" },
+    "pickup_location_id": { "type": "integer" },
+    "dropoff_location_id": { "type": "integer" },
+    "vendor_id": { "type": "integer" },
+    "pickup_datetime": { "type": "string" },
+    "estimated_dropoff_datetime": { "type": "string" },
+    "estimated_fare_amount": { "type": "number" },
+    "dropoff_datetime": { "type": "string" },
+    "rate_code": { "type": "number" },
+    "passenger_count": { "type": "number" },
+    "trip_distance": { "type": "number" },
+    "fare_amount": { "type": "number" },
+    "tip_amount": { "type": "number" },
+    "payment_type": { "type": "number" },
+    "trip_type": { "type": "number" },
+    "event_type": { "type": "string", "enum": ["trip_start", "trip_end"] }
+  },
+  "required": ["trip_id", "event_type"]
+}
