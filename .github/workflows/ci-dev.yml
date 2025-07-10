@@ -26,4 +26,4 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest tests/ || echo " No tests found yet - you can ignore this message if not set up yet"
+        pytest tests/
