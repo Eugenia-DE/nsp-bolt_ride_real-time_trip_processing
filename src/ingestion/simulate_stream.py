@@ -8,7 +8,7 @@ from jsonschema import validate, ValidationError
 
 # Constants
 STREAM_NAME = "trip_events_stream"
-REGION = "us-west-1"
+REGION = "eu-west-1"
 SCHEMA_PATH = "schemas/trip_event_schema.json"
 BATCH_SIZE = 100
 
