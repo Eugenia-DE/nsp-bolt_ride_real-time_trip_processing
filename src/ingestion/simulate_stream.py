@@ -13,7 +13,7 @@ import traceback
 STREAM_NAME = "trip_events_stream"
 REGION = "eu-west-1"
 SCHEMA_PATH = "schemas/trip_event_schema.json"
-BATCH_SIZE = 100
+BATCH_SIZE_RANGE = (10, 100)
 LOG_FILE = "simulation_log.jsonl"
 LOG_S3_BUCKET = "trip-analytics-kpi-bucket"
 LOG_S3_PREFIX = "simulation_logs/"
@@ -42,8 +42,12 @@ def prepare_events():
     return all_events
 
 def batch_events(events_df):
-    for i in range(0, len(events_df), BATCH_SIZE):
-        yield events_df.iloc[i:i + BATCH_SIZE]
+    """Yield batches of random size between BATCH_SIZE_RANGE"""
+    i = 0
+    while i < len(events_df):
+        batch_size = random.randint(*BATCH_SIZE_RANGE)
+        yield events_df.iloc[i:i + batch_size]
+        i += batch_size
 
 def validate_event(event):
     try:
