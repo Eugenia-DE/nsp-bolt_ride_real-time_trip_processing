@@ -31,7 +31,18 @@ jobs:
 
     - name: Deploy Lambda Function (process_trip_event)
       run: |
-        zip -r lambda.zip lambda/
+        cd lambda/process_trip_event
+        zip -r function.zip .
         aws lambda update-function-code \
           --function-name process_trip_event \
-          --zip-file fileb://lambda.zip
+          --zip-file fileb://function.zip
+        cd -
+
+    - name: Deploy Lambda Function (aggregate_trip_kpis)
+      run: |
+        cd lambda/aggregate_trip_kpis
+        zip -r function.zip .
+        aws lambda update-function-code \
+          --function-name aggregate_trip_kpis \
+          --zip-file fileb://function.zip
+        cd -
