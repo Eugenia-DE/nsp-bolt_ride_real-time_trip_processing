@@ -1,0 +1,11 @@
+boto3
+pandas
+jsonschema
+aws-lambda-powertools
+
+pytest
+moto
+boto3-stubs[essential]
+
+mypy
+black
