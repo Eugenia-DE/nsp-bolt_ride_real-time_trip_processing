@@ -36,6 +36,8 @@ pip install -r requirements.txt
 
 ## Architecture
 
+![alt text](architecture/nsp-bolt-ride-architecture.png)
+
 ### AWS Services Used
 
 | Service | Purpose |
