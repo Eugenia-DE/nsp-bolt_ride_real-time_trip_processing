@@ -36,6 +36,8 @@ pip install -r requirements.txt
 
 ## Architecture
 
+![alt text](architecture/nsp-bolt-ride-architecture.png)
+
 ### AWS Services Used
 
 | Service | Purpose |
@@ -110,9 +112,9 @@ The pipeline computes the following daily metrics for completed trips:
 
 Below is an example of the aggregated daily KPI output written to S3:
 
-![alt text](<images/2025-07-11 225257.png>)
-
 ![alt text](<images/2025-07-11 225007.png>)
+
+![alt text](<images/2025-07-11 225257.png>)
 
 ## Deployment and Usage
 
