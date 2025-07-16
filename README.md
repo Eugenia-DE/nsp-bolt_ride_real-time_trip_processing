@@ -112,9 +112,44 @@ The pipeline computes the following daily metrics for completed trips:
 
 Below is an example of the aggregated daily KPI output written to S3:
 
-![alt text](<images/2025-07-11 225007.png>)
+![alt text](images/2024-05-25.png)
 
-![alt text](<images/2025-07-11 225257.png>)
+![alt text](images/2024-05-26.png)
+
+### KPI Breakdown and Analysis
+
+#### May 25, 2024
+
+**Daily Metrics:**
+- **Total Trips:** 4,885 trips completed
+- **Total Fare:** $268,640.79
+- **Average Fare:** $54.99
+- **Max Fare:** $99.99
+- **Min Fare:** $10.04
+
+**Analysis:**
+The data shows a high-traffic day with 4,885 completed trips generating substantial revenue of $268,640.79. The average fare of $54.99 indicates a healthy mix of short and long-distance rides. The fare range from $10.04 to $99.99 demonstrates typical pricing variation across different trip lengths and distances.
+
+---
+
+#### May 26, 2024
+
+**Daily Metrics:**
+- **Total Trips:** 114 trips completed
+- **Total Fare:** $5,753.10
+- **Average Fare:** $50.47
+- **Max Fare:** $99.78
+- **Min Fare:** $10.46
+
+**Analysis:**
+A significant decrease in trip volume with only 114 trips completed, representing a 97% drop from the previous day. Despite the lower volume, the average fare remained relatively stable at $50.47, and the fare range ($10.46 - $99.78) was consistent with normal pricing patterns.
+
+**Possible explanations for the traffic drop:**
+- System outage or technical issues
+- Holiday or special event affecting demand
+- Limited driver availability
+- External factors (weather, local events, etc.)
+
 
 ## Deployment and Usage
 
