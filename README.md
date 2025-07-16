@@ -117,56 +117,38 @@ Below is an example of the aggregated daily KPI output written to S3:
 ![alt text](images/2024-05-26.png)
 
 ### KPI Breakdown and Analysis
-May 25, 2024
-{
-  "date": "2024-05-25",
-  "count_trips": 4885,
-  "total_fare": 268640.79,
-  "average_fare": 54.99,
-  "max_fare": 99.99,
-  "min_fare": 10.04
-}
 
-Interpretation:
+#### May 25, 2024
 
-Total Trips (count_trips): 4,885 trips were completed, which indicates a high-traffic day.
+**Daily Metrics:**
+- **Total Trips:** 4,885 trips completed
+- **Total Fare:** $268,640.79
+- **Average Fare:** $54.99
+- **Max Fare:** $99.99
+- **Min Fare:** $10.04
 
-Total Fare: The total fare collected was 268,640.79, suggesting strong revenue.
+**Analysis:**
+The data shows a high-traffic day with 4,885 completed trips generating substantial revenue of $268,640.79. The average fare of $54.99 indicates a healthy mix of short and long-distance rides. The fare range from $10.04 to $99.99 demonstrates typical pricing variation across different trip lengths and distances.
 
-Average Fare: Each trip earned an average of 54.99, a healthy average fare, likely driven by a mix of short and long rides.
+---
 
-Max Fare: The most expensive trip was 99.99, showing the upper bound of ride costs for the day.
+#### May 26, 2024
 
-Min Fare: The cheapest ride cost 10.04, which may indicate a short-distance or discounted trip.
+**Daily Metrics:**
+- **Total Trips:** 114 trips completed
+- **Total Fare:** $5,753.10
+- **Average Fare:** $50.47
+- **Max Fare:** $99.78
+- **Min Fare:** $10.46
 
+**Analysis:**
+A significant decrease in trip volume with only 114 trips completed, representing a 97% drop from the previous day. Despite the lower volume, the average fare remained relatively stable at $50.47, and the fare range ($10.46 - $99.78) was consistent with normal pricing patterns.
 
-May 26, 2024
-{
-  "date": "2024-05-26",
-  "count_trips": 114,
-  "total_fare": 5753.10,
-  "average_fare": 50.47,
-  "max_fare": 99.78,
-  "min_fare": 10.46
-}
-
-Interpretation:
-
-Total Trips: Only 114 trips occurred, a drop compared to the previous day. This could indicate:
-
-A system issue
-
-A holiday or low-demand day
-
-Limited driver availability
-
-Total Fare: Revenue was 5753.10, aligned with the lower trip count.
-
-Average Fare: The average fare is slightly lower at 50.47, consistent with fewer but similarly priced rides.
-
-Max Fare: Still high at 99.78, suggesting at least one long-distance trip.
-
-Min Fare: Slightly higher than the previous day at 10.46.
+**Possible explanations for the traffic drop:**
+- System outage or technical issues
+- Holiday or special event affecting demand
+- Limited driver availability
+- External factors (weather, local events, etc.)
 
 
 ## Deployment and Usage
