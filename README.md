@@ -112,9 +112,62 @@ The pipeline computes the following daily metrics for completed trips:
 
 Below is an example of the aggregated daily KPI output written to S3:
 
-![alt text](<images/2025-07-11 225007.png>)
+![alt text](images/2024-05-25.png)
 
-![alt text](<images/2025-07-11 225257.png>)
+![alt text](images/2024-05-26.png)
+
+### KPI Breakdown and Analysis
+May 25, 2024
+{
+  "date": "2024-05-25",
+  "count_trips": 4885,
+  "total_fare": 268640.79,
+  "average_fare": 54.99,
+  "max_fare": 99.99,
+  "min_fare": 10.04
+}
+
+Interpretation:
+
+Total Trips (count_trips): 4,885 trips were completed, which indicates a high-traffic day.
+
+Total Fare: The total fare collected was 268,640.79, suggesting strong revenue.
+
+Average Fare: Each trip earned an average of 54.99, a healthy average fare, likely driven by a mix of short and long rides.
+
+Max Fare: The most expensive trip was 99.99, showing the upper bound of ride costs for the day.
+
+Min Fare: The cheapest ride cost 10.04, which may indicate a short-distance or discounted trip.
+
+
+May 26, 2024
+{
+  "date": "2024-05-26",
+  "count_trips": 114,
+  "total_fare": 5753.10,
+  "average_fare": 50.47,
+  "max_fare": 99.78,
+  "min_fare": 10.46
+}
+
+Interpretation:
+
+Total Trips: Only 114 trips occurred, a drop compared to the previous day. This could indicate:
+
+A system issue
+
+A holiday or low-demand day
+
+Limited driver availability
+
+Total Fare: Revenue was 5753.10, aligned with the lower trip count.
+
+Average Fare: The average fare is slightly lower at 50.47, consistent with fewer but similarly priced rides.
+
+Max Fare: Still high at 99.78, suggesting at least one long-distance trip.
+
+Min Fare: Slightly higher than the previous day at 10.46.
+
 
 ## Deployment and Usage
 
